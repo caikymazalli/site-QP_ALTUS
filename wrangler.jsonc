@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "siteqpaltus",
+  "compatibility_date": "2025-09-27",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "code_sandbox_light_be251f0a_1774122271"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
