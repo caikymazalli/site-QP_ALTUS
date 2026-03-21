@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="QP Altus – Seguros e Soluções Financeiras. Confiança, Estratégia e Evolução para quem exige excelência." />
+  <meta name="keywords" content="seguros, soluções financeiras, crédito, consórcio, financiamento imobiliário, home equity, QP Altus" />
+  <title>QP Altus | Seguros e Soluções Financeiras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <style>
+/* ============================================================
+   QP ALTUS — Global Stylesheet
+   Identidade Premium: Grafite · Dourado · Off-White
+   ============================================================ */
+:root{--black:#121212;--black-soft:#1a1a1a;--black-card:#1e1e1e;--gold:#C5A059;--gold-light:#d4b47a;--gold-dark:#a8883d;--off-white:#F5F5F5;--white:#ffffff;--gray-100:#f0f0f0;--gray-200:#e0e0e0;--gray-400:#9a9a9a;--gray-600:#555555;--dark-section:#0f0f0f;--border:rgba(197,160,89,0.18);--border-light:rgba(197,160,89,0.35);--shadow:0 4px 30px rgba(0,0,0,0.4);--radius:4px;--radius-md:8px;--transition:0.3s ease;--font-title:'Montserrat',sans-serif;--font-body:'Inter',sans-serif;--nav-h:80px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--off-white);color:var(--black);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;border:none;background:none;font-family:inherit}
+h1,h2,h3,h4,h5{font-family:var(--font-title);font-weight:700;line-height:1.25;letter-spacing:-0.01em}
+h1{font-size:clamp(2rem,4.5vw,3.4rem)}h2{font-size:clamp(1.6rem,3vw,2.5rem)}h3{font-size:clamp(1.2rem,2vw,1.6rem)}h4{font-size:clamp(1rem,1.5vw,1.2rem)}h5{font-size:0.85rem;text-transform:uppercase;letter-spacing:0.12em}
+p{color:var(--gray-600)}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.section{padding:96px 0}.section--dark{background:var(--dark-section);color:var(--off-white)}.section--dark p{color:var(--gray-400)}
+.section-header{margin-bottom:3.5rem}.section-header.center{text-align:center}
+.section-label{display:inline-block;font-family:var(--font-title);font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem}
+.section-title{color:inherit;margin-bottom:1rem}.section--dark .section-title{color:var(--off-white)}
+.section-desc{max-width:560px;font-size:1.05rem}.section-header.center .section-desc{margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;font-family:var(--font-title);font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;border-radius:var(--radius);transition:all var(--transition);cursor:pointer;white-space:nowrap}
+.btn--primary{background:var(--gold);color:var(--black);border:2px solid var(--gold)}.btn--primary:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(197,160,89,0.35)}
+.btn--outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.4)}.btn--outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn--dark{background:var(--black);color:var(--gold);border:2px solid var(--black)}.btn--dark:hover{background:var(--gold);color:var(--black)}
+.btn--lg{padding:1rem 2.5rem;font-size:0.9rem}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);background:transparent;transition:background var(--transition),box-shadow var(--transition)}
+.navbar.scrolled{background:rgba(12,12,12,0.97);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,0.5)}
+.navbar__inner{display:flex;align-items:center;justify-content:space-between;height:100%}
+.navbar__logo{display:flex;flex-direction:column;line-height:1;gap:2px;text-decoration:none}
+.logo-qp{font-family:var(--font-title);font-size:1.5rem;font-weight:800;color:var(--gold);letter-spacing:0.05em;display:inline}
+.logo-sep{font-size:1.4rem;color:rgba(197,160,89,0.4);margin:0 4px;display:inline}
+.logo-altus{font-family:var(--font-title);font-size:1.5rem;font-weight:800;color:var(--white);letter-spacing:0.12em;display:inline}
+.logo-sub{display:block;font-family:var(--font-title);font-size:0.52rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-400);margin-top:3px}
+.nav-list{display:flex;align-items:center;gap:0.25rem}
+.nav-link{font-family:var(--font-title);font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(245,245,245,0.85);padding:0.5rem 0.75rem;border-radius:var(--radius);transition:color var(--transition);display:flex;align-items:center;gap:4px}
+.nav-link:hover,.nav-link.active{color:var(--gold)}
+.nav-link.nav-cta{background:var(--gold);color:var(--black)!important;padding:0.5rem 1.25rem;margin-left:0.5rem}.nav-link.nav-cta:hover{background:var(--gold-light)}
+.has-dropdown{position:relative}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;min-width:220px;background:rgba(20,20,20,0.98);border:1px solid var(--border);border-radius:var(--radius-md);padding:0.5rem 0;opacity:0;visibility:hidden;transform:translateY(-8px);transition:all var(--transition);backdrop-filter:blur(12px);box-shadow:var(--shadow);z-index:100}
+.has-dropdown:hover .dropdown,.has-dropdown:focus-within .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown li a{display:block;padding:0.6rem 1.25rem;font-family:var(--font-title);font-size:0.75rem;font-weight:500;letter-spacing:0.05em;color:rgba(245,245,245,0.8);transition:color var(--transition),background var(--transition)}.dropdown li a:hover{color:var(--gold);background:rgba(197,160,89,0.08)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:4px;z-index:1001}
+.hamburger span{display:block;width:24px;height:2px;background:var(--off-white);border-radius:2px;transition:all var(--transition)}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hamburger.open span:nth-child(2){opacity:0}.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--black);overflow:hidden}
+.hero__overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,0.95) 0%,rgba(18,18,18,0.85) 50%,rgba(20,15,5,0.92) 100%);z-index:1}
+.hero__bg-pattern{position:absolute;inset:0;background-image:radial-gradient(circle at 70% 30%,rgba(197,160,89,0.07) 0%,transparent 55%),radial-gradient(circle at 10% 80%,rgba(197,160,89,0.05) 0%,transparent 45%),repeating-linear-gradient(-45deg,transparent,transparent 60px,rgba(197,160,89,0.025) 60px,rgba(197,160,89,0.025) 61px);z-index:0}
+.hero__content{position:relative;z-index:2;padding-top:var(--nav-h);max-width:780px;padding-bottom:4rem}
+.hero__tag{display:inline-block;font-family:var(--font-title);font-size:0.72rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border-light);padding:0.3rem 0.9rem;border-radius:2px;margin-bottom:1.5rem}
+.hero__title{color:var(--white);margin-bottom:1.25rem;font-size:clamp(2.2rem,5vw,3.8rem)}.hero__title span{color:var(--gold)}
+.hero__subtitle{color:rgba(245,245,245,0.65);font-size:clamp(1rem,1.8vw,1.2rem);max-width:620px;margin-bottom:2.5rem;line-height:1.75}
+.hero__actions{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:3rem}
+.hero__tagline{display:flex;align-items:center;gap:0.75rem;font-family:var(--font-title);font-size:0.7rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:rgba(197,160,89,0.6)}.hero__tagline .sep{color:var(--gold);font-size:1rem}
+.hero__scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2}.hero__scroll-hint span{display:block;width:1px;height:60px;background:linear-gradient(to bottom,var(--gold),transparent);margin:0 auto;animation:scrollLine 2s ease-in-out infinite}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.pillars{background:var(--off-white)}.pillars__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.pillar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:2.5rem 2rem;text-align:center;transition:all var(--transition);position:relative;overflow:hidden}
+.pillar-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-dark),var(--gold-light));transform:scaleX(0);transition:transform var(--transition)}.pillar-card:hover::before{transform:scaleX(1)}.pillar-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.1)}
+.pillar-card__icon{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,rgba(197,160,89,0.12),rgba(197,160,89,0.06));border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.6rem;color:var(--gold);transition:all var(--transition)}.pillar-card:hover .pillar-card__icon{background:var(--gold);color:var(--black)}
+.pillar-card__title{font-family:var(--font-title);font-size:1.1rem;font-weight:700;color:var(--black);margin-bottom:0.75rem}.pillar-card__text{font-size:0.92rem;color:var(--gray-600)}
+.services{background:var(--dark-section)}.services__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem}
+.service-card{display:flex;flex-direction:column;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--radius-md);padding:2rem 1.5rem;transition:all var(--transition);cursor:pointer}.service-card:hover{background:rgba(197,160,89,0.07);border-color:var(--gold);transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.4)}
+.service-card__icon{font-size:1.6rem;color:var(--gold);margin-bottom:1rem}.service-card__title{font-family:var(--font-title);font-size:0.95rem;font-weight:700;color:var(--off-white);margin-bottom:0.5rem;letter-spacing:0.02em}.service-card__text{font-size:0.82rem;color:var(--gray-400);flex-grow:1;margin-bottom:1rem}.service-card__cta{font-family:var(--font-title);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:6px;transition:gap var(--transition)}.service-card:hover .service-card__cta{gap:10px}
+.concierge-highlight{background:var(--black-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.concierge-highlight__inner{display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;position:relative}
+.concierge-highlight__badge{position:absolute;top:-1rem;left:0;background:var(--gold);color:var(--black);font-family:var(--font-title);font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.75rem;border-radius:2px}
+.concierge-highlight__content{max-width:580px}.concierge-highlight__content p{font-size:1.05rem;margin-bottom:1.75rem;color:var(--gray-400)}
+.concierge-list{margin-bottom:2rem}.concierge-list li{display:flex;align-items:flex-start;gap:0.75rem;margin-bottom:0.6rem;font-size:0.92rem;color:var(--gray-400)}.concierge-list li i{color:var(--gold);margin-top:3px;flex-shrink:0}
+.concierge-highlight__visual{flex-shrink:0}.concierge-visual-box{width:300px;border:1px solid var(--border-light);border-radius:var(--radius-md);padding:2.5rem 2rem;text-align:center;background:rgba(197,160,89,0.04)}
+.concierge-crown{font-size:2.5rem;color:var(--gold);margin-bottom:1.5rem;display:block}.concierge-stats{display:flex;flex-direction:column;gap:1.25rem}.cstat{text-align:center}.cstat__num{display:block;font-family:var(--font-title);font-size:1.4rem;font-weight:700;color:var(--gold)}.cstat__label{font-size:0.75rem;color:var(--gray-400);text-transform:uppercase;letter-spacing:0.1em}
+.why{background:var(--dark-section)}.why__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:1rem}
+.why-card{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius-md);padding:2rem 1.5rem;transition:all var(--transition)}.why-card:hover{background:rgba(197,160,89,0.06);border-color:var(--border-light);transform:translateY(-3px)}
+.why-card i{font-size:1.5rem;color:var(--gold);margin-bottom:1rem;display:block}.why-card h4{font-family:var(--font-title);font-size:0.95rem;font-weight:700;color:var(--off-white);margin-bottom:0.6rem}.why-card p{font-size:0.85rem;color:var(--gray-400)}
+.cta-final{background:var(--black);text-align:center}.cta-final__inner{max-width:700px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:1.5rem}.cta-final__line{width:60px;height:1px;background:var(--gold)}.cta-final__title{color:var(--white);font-size:clamp(1.6rem,3vw,2.4rem)}.cta-final__sub{color:var(--gray-400);font-size:1.05rem}
+.footer{background:#0a0a0a;border-top:1px solid var(--border)}.footer__top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.5fr;gap:2.5rem;padding:4rem 1.5rem 3rem}
+.footer__brand-desc{font-size:0.88rem;color:var(--gray-400);margin:1rem 0 1.5rem;max-width:280px;line-height:1.7}
+.footer__social{display:flex;gap:0.75rem}.footer__social a{width:36px;height:36px;border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:0.85rem;transition:all var(--transition)}.footer__social a:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.footer__col h5{font-family:var(--font-title);font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}.footer__col ul li{margin-bottom:0.5rem}.footer__col ul li a,.footer__col ul li{font-size:0.85rem;color:var(--gray-400);transition:color var(--transition)}.footer__col ul li a:hover{color:var(--gold)}
+.footer__bottom{border-top:1px solid var(--border)}.footer__bottom-inner{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;font-size:0.8rem;color:var(--gray-600)}.footer__lgpd{display:flex;align-items:center;gap:0.4rem;color:var(--gray-400)!important}.footer__lgpd strong{color:var(--gold);font-weight:600}
+.page-hero{background:var(--black);padding:calc(var(--nav-h) + 64px) 0 64px;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(197,160,89,0.07) 0%,transparent 55%),repeating-linear-gradient(-45deg,transparent,transparent 50px,rgba(197,160,89,0.02) 50px,rgba(197,160,89,0.02) 51px)}
+.page-hero .container{position:relative;z-index:1}
+.page-hero__breadcrumb{display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:var(--gray-400);margin-bottom:1.5rem;font-family:var(--font-title);letter-spacing:0.05em}.page-hero__breadcrumb a{color:var(--gold)}.page-hero__breadcrumb i{font-size:0.6rem}
+.page-hero__tag{display:inline-block;font-family:var(--font-title);font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border-light);padding:0.25rem 0.75rem;border-radius:2px;margin-bottom:1rem}
+.page-hero h1{color:var(--white);margin-bottom:1rem}.page-hero p.lead{color:rgba(245,245,245,0.65);font-size:1.1rem;max-width:580px;margin-bottom:2rem}
+.sp-intro{background:var(--off-white)}.sp-intro__inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}.sp-intro__text p{margin-bottom:1rem;font-size:1rem}
+.sp-visual{background:var(--black);border:1px solid var(--border);border-radius:var(--radius-md);padding:3rem 2rem;text-align:center}.sp-visual__icon{font-size:3.5rem;color:var(--gold);margin-bottom:1rem}.sp-visual__label{font-family:var(--font-title);font-size:0.75rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-400)}
+.sp-benefits{background:var(--dark-section)}.benefits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.benefit-item{display:flex;gap:1rem;align-items:flex-start}.benefit-item__icon{width:44px;height:44px;flex-shrink:0;background:rgba(197,160,89,0.1);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1rem}.benefit-item__text h5{color:var(--off-white);font-size:0.85rem;margin-bottom:0.3rem;font-family:var(--font-title);font-weight:600;letter-spacing:0.05em;text-transform:none}.benefit-item__text p{font-size:0.85rem;color:var(--gray-400)}
+.sp-steps{background:var(--off-white)}.steps-list{display:flex;flex-direction:column;gap:1rem;max-width:720px;margin:0 auto}
+.step-item{display:flex;align-items:flex-start;gap:1.5rem;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:1.5rem;transition:border-color var(--transition)}.step-item:hover{border-color:var(--gold)}
+.step-num{width:40px;height:40px;flex-shrink:0;background:var(--gold);color:var(--black);font-family:var(--font-title);font-size:0.85rem;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.step-item h5{font-family:var(--font-title);font-size:0.9rem;font-weight:700;color:var(--black);margin-bottom:0.25rem;text-transform:none;letter-spacing:0}.step-item p{font-size:0.85rem;color:var(--gray-600)}
+.sp-faq{background:var(--dark-section)}.faq-list{max-width:800px;margin:0 auto}.faq-item{border-bottom:1px solid var(--border)}
+.faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 0;text-align:left;font-family:var(--font-title);font-size:0.92rem;font-weight:600;color:var(--off-white);cursor:pointer;transition:color var(--transition);gap:1rem}.faq-question:hover{color:var(--gold)}.faq-question i{color:var(--gold);transition:transform var(--transition);flex-shrink:0}.faq-item.open .faq-question i{transform:rotate(180deg)}.faq-answer{display:none;padding-bottom:1.25rem}.faq-item.open .faq-answer{display:block}.faq-answer p{font-size:0.9rem;color:var(--gray-400)}
+.sp-cta{background:var(--black);text-align:center}.sp-cta .container{max-width:700px}.sp-cta h2{color:var(--white);margin-bottom:1rem;font-size:clamp(1.4rem,2.5vw,2rem)}.sp-cta p{color:var(--gray-400);margin-bottom:2rem;font-size:1rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}.contact-info h3{color:var(--black);margin-bottom:1rem}.contact-info p{font-size:0.95rem;margin-bottom:2rem}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem}.contact-item__icon{width:44px;height:44px;flex-shrink:0;background:rgba(197,160,89,0.1);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold)}.contact-item h5{font-family:var(--font-title);font-size:0.72rem;font-weight:700;letter-spacing:0.15em;color:var(--gold);margin-bottom:0.25rem}.contact-item p{font-size:0.88rem;color:var(--gray-600);margin:0}
+.contact-form{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:2.5rem}.form-title{font-family:var(--font-title);font-size:1.1rem;font-weight:700;color:var(--black);margin-bottom:1.5rem}
+.form-group{margin-bottom:1.25rem}.form-group label{display:block;font-family:var(--font-title);font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-600);margin-bottom:0.4rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:0.85rem 1rem;border:1px solid var(--gray-200);border-radius:var(--radius);font-family:var(--font-body);font-size:0.92rem;color:var(--black);background:var(--off-white);transition:border-color var(--transition),box-shadow var(--transition);outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(197,160,89,0.12);background:var(--white)}.form-group textarea{resize:vertical;min-height:120px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-submit{width:100%;justify-content:center;padding:1rem}
+.concierge-services{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1rem}
+.concierge-service-card{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--radius-md);padding:2.5rem 2rem;transition:all var(--transition)}.concierge-service-card:hover{border-color:var(--gold);background:rgba(197,160,89,0.05)}.concierge-service-card .sc-icon{font-size:2rem;color:var(--gold);margin-bottom:1.25rem}.concierge-service-card h3{color:var(--off-white);font-size:1.1rem;margin-bottom:0.75rem}.concierge-service-card p{color:var(--gray-400);font-size:0.9rem;margin-bottom:1.25rem}.concierge-service-card ul li{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.85rem;color:var(--gray-400);margin-bottom:0.4rem}.concierge-service-card ul li i{color:var(--gold);margin-top:3px}
+[data-aos]{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}[data-aos].aos-animate{opacity:1;transform:translateY(0)}
+@media(max-width:1024px){.footer__top{grid-template-columns:1fr 1fr 1fr}.footer__brand{grid-column:1/-1}.why__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){:root{--nav-h:68px}.section{padding:64px 0}.hamburger{display:flex}.navbar__nav{position:fixed;top:0;right:-100%;width:min(85vw,360px);height:100vh;background:rgba(10,10,10,0.98);backdrop-filter:blur(16px);padding:calc(var(--nav-h) + 1.5rem) 2rem 2rem;border-left:1px solid var(--border);transition:right var(--transition);overflow-y:auto;z-index:999}.navbar__nav.open{right:0}.nav-list{flex-direction:column;align-items:flex-start;gap:0}.nav-link{padding:0.75rem 0;border-radius:0;width:100%;justify-content:space-between}.has-dropdown .dropdown{position:static;opacity:1;visibility:visible;transform:none;background:none;border:none;padding:0 0 0 1rem;box-shadow:none}.has-dropdown .dropdown li a{color:var(--gray-400);font-size:0.8rem}.nav-link.nav-cta{margin:1rem 0 0}.hero__actions{flex-direction:column}.hero__actions .btn{width:100%;justify-content:center}.pillars__grid{grid-template-columns:1fr}.services__grid{grid-template-columns:repeat(2,1fr)}.concierge-highlight__inner{grid-template-columns:1fr}.concierge-highlight__visual{display:none}.why__grid{grid-template-columns:1fr}.sp-intro__inner{grid-template-columns:1fr}.sp-visual{display:none}.benefits-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.concierge-services{grid-template-columns:1fr}.footer__top{grid-template-columns:1fr 1fr}.footer__brand{grid-column:1/-1}.footer__bottom-inner{flex-direction:column;gap:0.5rem;text-align:center}}
+@media(max-width:480px){.services__grid{grid-template-columns:1fr}.footer__top{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="logo-qp">QP</span><span class="logo-sep">|</span><span class="logo-altus">ALTUS</span>
+        <span class="logo-sub">SEGUROS E SOLUÇÕES FINANCEIRAS</span>
+      </a>
+      <nav class="navbar__nav" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Início</a></li>
+          <li class="has-dropdown">
+            <a href="#" class="nav-link">Proteção Patrimonial <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="seguros.html">Seguros</a></li>
+              <li><a href="saude.html">Saúde</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" class="nav-link">Soluções de Crédito <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="credito-pf.html">Crédito PF</a></li>
+              <li><a href="credito-pj.html">Crédito PJ</a></li>
+              <li><a href="consignado.html">Consignado</a></li>
+              <li><a href="antecipacao.html">Antecipação de Recebíveis</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" class="nav-link">Investimento &amp; Imóveis <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="consorcios.html">Consórcios</a></li>
+              <li><a href="financiamento-veiculos.html">Financiamento de Veículos</a></li>
+              <li><a href="financiamento-imobiliario.html">Financiamento Imobiliário</a></li>
+              <li><a href="home-equity.html">Home Equity</a></li>
+            </ul>
+          </li>
+          <li><a href="altus-concierge.html" class="nav-link">Altus Concierge</a></li>
+          <li><a href="contato.html" class="nav-link nav-cta">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__bg-pattern"></div>
+    <div class="container hero__content">
+      <span class="hero__tag">Seguros &amp; Soluções Financeiras</span>
+      <h1 class="hero__title">Estratégia financeira para quem exige excelência.</h1>
+      <p class="hero__subtitle">Da proteção do seu patrimônio à aceleração do seu negócio, a QP Altus é sua parceira em cada etapa da evolução.</p>
+      <div class="hero__actions">
+        <a href="contato.html" class="btn btn--primary">Agende uma Consultoria Exclusiva</a>
+        <a href="#servicos" class="btn btn--outline">Conheça Nossas Soluções</a>
+      </div>
+      <div class="hero__tagline">
+        <span>CONFIANÇA</span>
+        <span class="sep">·</span>
+        <span>ESTRATÉGIA</span>
+        <span class="sep">·</span>
+        <span>EVOLUÇÃO</span>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section class="pillars section" id="pilares">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Nossa Essência</span>
+        <h2 class="section-title">Os Três Pilares da QP Altus</h2>
+        <p class="section-desc">Cada decisão que tomamos é guiada pelos valores que sustentam nossa atuação e constroem relações de excelência.</p>
+      </div>
+      <div class="pillars__grid">
+        <div class="pillar-card" data-aos="fade-up" data-delay="0">
+          <div class="pillar-card__icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="pillar-card__title">Confiança</h3>
+          <p class="pillar-card__text">Construímos relações duradouras baseadas na transparência e segurança.</p>
+        </div>
+        <div class="pillar-card" data-aos="fade-up" data-delay="150">
+          <div class="pillar-card__icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="pillar-card__title">Estratégia</h3>
+          <p class="pillar-card__text">Soluções financeiras desenhadas para impulsionar seus objetivos com precisão.</p>
+        </div>
+        <div class="pillar-card" data-aos="fade-up" data-delay="300">
+          <div class="pillar-card__icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3 class="pillar-card__title">Evolução</h3>
+          <p class="pillar-card__text">Acompanhamos sua jornada, adaptando-nos para o seu crescimento contínuo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VITRINE DE SERVIÇOS -->
+  <section class="services section section--dark" id="servicos">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">O Que Fazemos</span>
+        <h2 class="section-title">Soluções Completas para Cada Etapa</h2>
+        <p class="section-desc">Portfólio abrangente de produtos financeiros com atendimento consultivo e personalizado.</p>
+      </div>
+      <div class="services__grid">
+
+        <a href="seguros.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-shield-alt"></i></div>
+          <h4 class="service-card__title">Seguros</h4>
+          <p class="service-card__text">Proteção patrimonial personalizada para indivíduos e empresas.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="saude.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-heartbeat"></i></div>
+          <h4 class="service-card__title">Saúde</h4>
+          <p class="service-card__text">Curadoria de planos de saúde premium para você e sua empresa.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="consorcios.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-layer-group"></i></div>
+          <h4 class="service-card__title">Consórcio</h4>
+          <p class="service-card__text">Planejamento inteligente para conquistas de médio e longo prazo.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="credito-pf.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-user-tie"></i></div>
+          <h4 class="service-card__title">Crédito PF</h4>
+          <p class="service-card__text">Crédito pessoal estruturado com condições competitivas e agilidade.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="credito-pj.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-building"></i></div>
+          <h4 class="service-card__title">Crédito PJ</h4>
+          <p class="service-card__text">Capital de giro, expansão e reorganização financeira para empresas.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="antecipacao.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-bolt"></i></div>
+          <h4 class="service-card__title">Antecipação de Recebíveis</h4>
+          <p class="service-card__text">Liquidez imediata para manter o ritmo e a saúde do seu negócio.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="financiamento-veiculos.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-car"></i></div>
+          <h4 class="service-card__title">Financiamento de Veículos</h4>
+          <p class="service-card__text">As melhores condições para financiar seu veículo com assessoria especializada.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="financiamento-imobiliario.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-home"></i></div>
+          <h4 class="service-card__title">Financiamento Imobiliário</h4>
+          <p class="service-card__text">Realize o sonho do imóvel com planejamento e suporte completo.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="home-equity.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-key"></i></div>
+          <h4 class="service-card__title">Home Equity</h4>
+          <p class="service-card__text">Transforme seu imóvel em alavancagem com as menores taxas do mercado.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <a href="consignado.html" class="service-card">
+          <div class="service-card__icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h4 class="service-card__title">Consignado</h4>
+          <p class="service-card__text">Crédito com as menores taxas para servidores, aposentados e CLT.</p>
+          <span class="service-card__cta">Saiba Mais <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALTUS CONCIERGE DESTAQUE -->
+  <section class="concierge-highlight section">
+    <div class="container">
+      <div class="concierge-highlight__inner">
+        <div class="concierge-highlight__badge">Exclusivo</div>
+        <div class="concierge-highlight__content">
+          <span class="section-label">Serviço Premium</span>
+          <h2 class="section-title">Altus Concierge:<br/>Sua gestão, nossa expertise.</h2>
+          <p>Soluções personalizadas em gestão de contas e sistemas, desenhadas para a alta performance do seu negócio. Para quem exige mais do que soluções — exige resultados.</p>
+          <ul class="concierge-list">
+            <li><i class="fas fa-check"></i> Gestão de Contas com atendimento dedicado</li>
+            <li><i class="fas fa-check"></i> Implantação de ERP, CRM e BI sob medida</li>
+            <li><i class="fas fa-check"></i> Automação de processos e inteligência de dados</li>
+            <li><i class="fas fa-check"></i> Discrição absoluta e suporte estratégico</li>
+          </ul>
+          <a href="altus-concierge.html" class="btn btn--primary">Conheça o Altus Concierge</a>
+        </div>
+        <div class="concierge-highlight__visual">
+          <div class="concierge-visual-box">
+            <i class="fas fa-crown concierge-crown"></i>
+            <div class="concierge-stats">
+              <div class="cstat">
+                <span class="cstat__num">C-Level</span>
+                <span class="cstat__label">Atendimento</span>
+              </div>
+              <div class="cstat">
+                <span class="cstat__num">360°</span>
+                <span class="cstat__label">Gestão Integrada</span>
+              </div>
+              <div class="cstat">
+                <span class="cstat__num">24/7</span>
+                <span class="cstat__label">Suporte Dedicado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS / POR QUE QP ALTUS -->
+  <section class="why section section--dark">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Por Que QP Altus</span>
+        <h2 class="section-title">A Diferença Está na Abordagem</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card">
+          <i class="fas fa-user-shield"></i>
+          <h4>Atendimento Consultivo</h4>
+          <p>Cada cliente recebe uma análise personalizada e acompanhamento contínuo ao longo de toda a jornada.</p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-network-wired"></i>
+          <h4>Portfólio Completo</h4>
+          <p>Uma única parceira estratégica para todas as suas necessidades financeiras, patrimoniais e empresariais.</p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-balance-scale"></i>
+          <h4>Transparência Total</h4>
+          <p>Comunicação clara, processos estruturados e total comprometimento com os seus objetivos.</p>
+        </div>
+        <div class="why-card">
+          <i class="fas fa-star"></i>
+          <h4>Posicionamento Premium</h4>
+          <p>Padrão de excelência em cada etapa, desde a análise inicial até o acompanhamento pós-contratação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final section">
+    <div class="container">
+      <div class="cta-final__inner">
+        <div class="cta-final__line"></div>
+        <h2 class="cta-final__title">Sua próxima etapa financeira começa aqui.</h2>
+        <p class="cta-final__sub">Fale com um especialista QP Altus e descubra a solução ideal para o seu momento.</p>
+        <a href="contato.html" class="btn btn--primary btn--lg">Falar com um Especialista</a>
+        <div class="cta-final__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo">
+          <span class="logo-qp">QP</span><span class="logo-sep">|</span><span class="logo-altus">ALTUS</span>
+          <span class="logo-sub">SEGUROS E SOLUÇÕES FINANCEIRAS</span>
+        </a>
+        <p class="footer__brand-desc">Parceira estratégica em seguros e soluções financeiras para quem exige excelência e resultados consistentes.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Proteção Patrimonial</h5>
+        <ul>
+          <li><a href="seguros.html">Seguros</a></li>
+          <li><a href="saude.html">Saúde</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Soluções de Crédito</h5>
+        <ul>
+          <li><a href="credito-pf.html">Crédito PF</a></li>
+          <li><a href="credito-pj.html">Crédito PJ</a></li>
+          <li><a href="consignado.html">Consignado</a></li>
+          <li><a href="antecipacao.html">Antecipação de Recebíveis</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Investimento &amp; Imóveis</h5>
+        <ul>
+          <li><a href="consorcios.html">Consórcios</a></li>
+          <li><a href="financiamento-veiculos.html">Financiamento de Veículos</a></li>
+          <li><a href="financiamento-imobiliario.html">Financiamento Imobiliário</a></li>
+          <li><a href="home-equity.html">Home Equity</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="altus-concierge.html">Altus Concierge</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <h5 style="margin-top:1.5rem;">Atendimento</h5>
+        <ul>
+          <li><i class="fas fa-envelope" style="color:var(--gold);margin-right:6px;"></i> contato@qpaltus.com.br</li>
+          <li><i class="fab fa-whatsapp" style="color:var(--gold);margin-right:6px;"></i> (00) 00000-0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 QP Altus. Todos os direitos reservados.</p>
+        <p class="footer__lgpd"><i class="fas fa-lock"></i> Seus dados estão protegidos pela <strong>LGPD</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded',function(){const navbar=document.getElementById('navbar');function handleScroll(){if(window.scrollY>40){navbar.classList.add('scrolled')}else{navbar.classList.remove('scrolled')}}window.addEventListener('scroll',handleScroll,{passive:true});handleScroll();const hamburger=document.getElementById('hamburger');const navMenu=document.getElementById('navMenu');if(hamburger&&navMenu){hamburger.addEventListener('click',function(){hamburger.classList.toggle('open');navMenu.classList.toggle('open');document.body.style.overflow=navMenu.classList.contains('open')?'hidden':''});navMenu.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){hamburger.classList.remove('open');navMenu.classList.remove('open');document.body.style.overflow=''})})}document.querySelectorAll('.has-dropdown > .nav-link').forEach(function(trigger){trigger.addEventListener('click',function(e){if(window.innerWidth<=768){e.preventDefault();const parent=trigger.closest('.has-dropdown');const dropdown=parent.querySelector('.dropdown');if(dropdown){const isOpen=dropdown.style.display==='block';document.querySelectorAll('.has-dropdown .dropdown').forEach(d=>{d.style.display='none'});if(!isOpen)dropdown.style.display='block'}}})});const aosElements=document.querySelectorAll('[data-aos]');if(aosElements.length>0){const observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){const delay=entry.target.getAttribute('data-delay')||0;setTimeout(function(){entry.target.classList.add('aos-animate')},parseInt(delay));observer.unobserve(entry.target)}})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});aosElements.forEach(function(el){observer.observe(el)})}document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){const item=btn.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(fi){fi.classList.remove('open')});if(!isOpen){item.classList.add('open')}})});document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){const href=anchor.getAttribute('href');if(href.length>1){const target=document.querySelector(href);if(target){e.preventDefault();const offset=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'))||80;const top=target.getBoundingClientRect().top+window.scrollY-offset;window.scrollTo({top,behavior:'smooth'})}}})});const currentPath=window.location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav-link').forEach(function(link){const href=link.getAttribute('href');if(href===currentPath||(currentPath===''&&href==='index.html')){link.classList.add('active')}else{link.classList.remove('active')}});const contactForm=document.getElementById('contactForm');if(contactForm){contactForm.addEventListener('submit',function(e){e.preventDefault();const btn=contactForm.querySelector('.form-submit');const originalText=btn.textContent;btn.textContent='Enviando…';btn.disabled=true;setTimeout(function(){btn.textContent='✓ Mensagem Enviada!';btn.style.background='#2d7d46';btn.style.borderColor='#2d7d46';setTimeout(function(){btn.textContent=originalText;btn.style.background='';btn.style.borderColor='';btn.disabled=false;contactForm.reset()},3000)},1200)})}});
+  </script>
+</body>
+</html>
